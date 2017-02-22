@@ -11,6 +11,18 @@ Summary: Validating URI References per RFC 3986
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/rfc3986-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rfc3986-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/rfc3986-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/rfc3986-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/rfc3986-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/rfc3986-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rfc3986/badges/version.svg)](https://anaconda.org/conda-forge/rfc3986)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rfc3986/badges/downloads.svg)](https://anaconda.org/conda-forge/rfc3986)
+
 Installing rfc3986
 ==================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `rfc3986` available on your platfo
 ```
 conda search rfc3986 --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/rfc3986-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rfc3986-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/rfc3986-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/rfc3986-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/rfc3986-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/rfc3986-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rfc3986/badges/version.svg)](https://anaconda.org/conda-forge/rfc3986)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rfc3986/badges/downloads.svg)](https://anaconda.org/conda-forge/rfc3986)
 
 
 Updating rfc3986-feedstock
