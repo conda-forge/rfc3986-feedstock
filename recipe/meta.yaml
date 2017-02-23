@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://rfc3986.readthedocs.io
-  license: Apache 2.0
+  license: Apache
   license_family: Apache
   license_file: LICENSE
   summary: 'Validating URI References per RFC 3986'
