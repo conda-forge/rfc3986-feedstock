@@ -3,7 +3,7 @@ About rfc3986
 
 Home: https://rfc3986.readthedocs.io
 
-Package license: Apache 2.0
+Package license: Apache
 
 Feedstock license: BSD 3-Clause
 
