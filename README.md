@@ -14,9 +14,7 @@ Summary: Validating URI References per RFC 3986
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/rfc3986-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rfc3986-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/rfc3986-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/rfc3986-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/rfc3986-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/rfc3986-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/rfc3986-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rfc3986-feedstock)
 
 Current release info
 ====================
