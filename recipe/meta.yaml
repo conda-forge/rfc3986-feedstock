@@ -1,21 +1,22 @@
-{%set name = "rfc3986" %}
-{%set version = "0.4.1" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "5ac85eb132fae7bbd811fa48d11984ae3104be30d44d397a351d004c633a68d2" %}
-{%set build_num = "0" %}
+{% set name = "rfc3986" %}
+{% set version = "1.1.0" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "8458571c4c57e1cf23593ad860bb601b6a604df6217f829c2bc70dc4b5af941b" %}
+{% set build = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build_num }}
+  noarch: python
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
