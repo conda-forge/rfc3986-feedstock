@@ -1,8 +1,7 @@
 {% set name = "rfc3986" %}
-{% set version = "1.3.2" %}
+{% set version = "1.4.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "0344d0bd428126ce554e7ca2b61787b6a28d2bbd19fc70ed2dd85efe31176405" %}
+{% set hash = "112398da31a3344dc25dbf477d8df6cb34f9278a94fee2625d89e4514be8bb9d" %}
 {% set build = 0 %}
 
 package:
@@ -12,7 +11,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
@@ -36,7 +35,7 @@ about:
   license: Apache
   license_family: Apache
   license_file: LICENSE
-  summary: 'Validating URI References per RFC 3986'
+  summary: Validating URI References per RFC 3986
   doc_url: https://rfc3986.readthedocs.io
   dev_url: https://github.com/sigmavirus24/rfc3986
 
