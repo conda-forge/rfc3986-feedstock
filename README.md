@@ -3,12 +3,13 @@ About rfc3986
 
 Home: https://rfc3986.readthedocs.io
 
-Package license: Apache
+Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
 Summary: Validating URI References per RFC 3986
 
+A Python implementation of RFC 3986 including validation and authority parsing.
 
 
 Current build status
@@ -117,6 +118,7 @@ Feedstock Maintainers
 =====================
 
 * [@anguslees](https://github.com/anguslees/)
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@sigmavirus24](https://github.com/sigmavirus24/)
 
