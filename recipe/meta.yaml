@@ -1,46 +1,55 @@
 {% set name = "rfc3986" %}
 {% set version = "1.4.0" %}
-{% set bundle = "tar.gz" %}
-{% set hash = "112398da31a3344dc25dbf477d8df6cb34f9278a94fee2625d89e4514be8bb9d" %}
-{% set build = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 112398da31a3344dc25dbf477d8df6cb34f9278a94fee2625d89e4514be8bb9d
 
 build:
   noarch: python
-  number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
+    - pip
     - python
-    - setuptools
-
   run:
     - python
 
 test:
+  source_files:
+    - tests
+  requires:
+    - idna
+    - pip
+    - pytest
+    - pytest-cov >=2.0
   imports:
     - rfc3986
+  commands:
+    - python -m pip check
+    # 100% coverage is not possible in a single run due to py27-only code
+    - pytest --cov rfc3986 --cov-fail-under 99 -vv
 
 about:
   home: https://rfc3986.readthedocs.io
-  license: Apache
-  license_family: Apache
+  license: Apache-2.0
+  license_family: APACHE
   license_file: LICENSE
   summary: Validating URI References per RFC 3986
+  description: |
+    A Python implementation of RFC 3986 including validation and authority parsing.
   doc_url: https://rfc3986.readthedocs.io
-  dev_url: https://github.com/sigmavirus24/rfc3986
+  dev_url: https://github.com/python-hyper/rfc3986
 
 extra:
   recipe-maintainers:
     - anguslees
     - pmlandwehr
     - sigmavirus24
+    - bollwyvl
