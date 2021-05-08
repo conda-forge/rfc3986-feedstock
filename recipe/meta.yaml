@@ -1,5 +1,5 @@
 {% set name = "rfc3986" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 112398da31a3344dc25dbf477d8df6cb34f9278a94fee2625d89e4514be8bb9d
+  sha256: 270aaf10d87d0d4e095063c65bf3ddbc6ee3d0b226328ce21e036f946e421835
 
 build:
   noarch: python
@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.4
   run:
-    - python
+    - python >=3.4
 
 test:
   source_files:
