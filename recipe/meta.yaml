@@ -52,6 +52,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - pmlandwehr
     - anguslees
     - sigmavirus24
     - bollwyvl
